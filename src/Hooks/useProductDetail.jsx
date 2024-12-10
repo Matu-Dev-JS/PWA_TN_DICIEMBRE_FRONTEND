@@ -7,7 +7,7 @@ const useProductDetail = (product_id) =>{
     const [product_detail_error_state, setProductDetailError] = useState(null)
 
     const getProductDetail = async (product_id) => {
-        const response = await fetch(`${import.meta.env.VITE_API_URL}}/api/products/${product_id}`, {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/products/${product_id}`, {
             method: 'GET',
             headers: getAuthenticatedHeaders()
         })
